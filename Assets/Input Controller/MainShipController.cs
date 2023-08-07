@@ -44,6 +44,15 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""FireCannons"",
+                    ""type"": ""Button"",
+                    ""id"": ""3227506e-54fe-4d30-8278-698d7bfbe315"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -123,6 +132,17 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
                     ""action"": ""FireBullet"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b860c4b8-7c1d-4190-ae0e-ee76064b8d8e"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""FireCannons"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -145,6 +165,7 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
         m_Ship = asset.FindActionMap("Ship", throwIfNotFound: true);
         m_Ship_Move = m_Ship.FindAction("Move", throwIfNotFound: true);
         m_Ship_FireBullet = m_Ship.FindAction("FireBullet", throwIfNotFound: true);
+        m_Ship_FireCannons = m_Ship.FindAction("FireCannons", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -208,12 +229,14 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
     private List<IShipActions> m_ShipActionsCallbackInterfaces = new List<IShipActions>();
     private readonly InputAction m_Ship_Move;
     private readonly InputAction m_Ship_FireBullet;
+    private readonly InputAction m_Ship_FireCannons;
     public struct ShipActions
     {
         private @MainShipController m_Wrapper;
         public ShipActions(@MainShipController wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Ship_Move;
         public InputAction @FireBullet => m_Wrapper.m_Ship_FireBullet;
+        public InputAction @FireCannons => m_Wrapper.m_Ship_FireCannons;
         public InputActionMap Get() { return m_Wrapper.m_Ship; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -229,6 +252,9 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
             @FireBullet.started += instance.OnFireBullet;
             @FireBullet.performed += instance.OnFireBullet;
             @FireBullet.canceled += instance.OnFireBullet;
+            @FireCannons.started += instance.OnFireCannons;
+            @FireCannons.performed += instance.OnFireCannons;
+            @FireCannons.canceled += instance.OnFireCannons;
         }
 
         private void UnregisterCallbacks(IShipActions instance)
@@ -239,6 +265,9 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
             @FireBullet.started -= instance.OnFireBullet;
             @FireBullet.performed -= instance.OnFireBullet;
             @FireBullet.canceled -= instance.OnFireBullet;
+            @FireCannons.started -= instance.OnFireCannons;
+            @FireCannons.performed -= instance.OnFireCannons;
+            @FireCannons.canceled -= instance.OnFireCannons;
         }
 
         public void RemoveCallbacks(IShipActions instance)
@@ -269,5 +298,6 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnFireBullet(InputAction.CallbackContext context);
+        void OnFireCannons(InputAction.CallbackContext context);
     }
 }
