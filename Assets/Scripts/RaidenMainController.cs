@@ -34,7 +34,6 @@ public class RaidenMainController : MonoBehaviour
         else
         {
             rb2d.constraints = RigidbodyConstraints2D.None;
-            // rb2d.velocity = new Vector2(Mathf.Clamp(rb2d.velocity.x + inputVector.x, -10, 10), Mathf.Clamp(rb2d.velocity.y + inputVector.y, -10, 10));
             rb2d.velocity = new Vector2(inputVector.x * shipSpeed,inputVector.y * shipSpeed);
         }
         Debug.Log(rb2d.velocity);
