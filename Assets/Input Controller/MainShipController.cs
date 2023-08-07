@@ -35,6 +35,15 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""FireBullet"",
+                    ""type"": ""Button"",
+                    ""id"": ""1da580d4-2f31-4960-88d6-26b7c73c0268"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -103,6 +112,17 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba92493e-50bd-4237-a40b-a2e0ba989e00"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""FireBullet"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -124,6 +144,7 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
         // Ship
         m_Ship = asset.FindActionMap("Ship", throwIfNotFound: true);
         m_Ship_Move = m_Ship.FindAction("Move", throwIfNotFound: true);
+        m_Ship_FireBullet = m_Ship.FindAction("FireBullet", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -186,11 +207,13 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Ship;
     private List<IShipActions> m_ShipActionsCallbackInterfaces = new List<IShipActions>();
     private readonly InputAction m_Ship_Move;
+    private readonly InputAction m_Ship_FireBullet;
     public struct ShipActions
     {
         private @MainShipController m_Wrapper;
         public ShipActions(@MainShipController wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Ship_Move;
+        public InputAction @FireBullet => m_Wrapper.m_Ship_FireBullet;
         public InputActionMap Get() { return m_Wrapper.m_Ship; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -203,6 +226,9 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
+            @FireBullet.started += instance.OnFireBullet;
+            @FireBullet.performed += instance.OnFireBullet;
+            @FireBullet.canceled += instance.OnFireBullet;
         }
 
         private void UnregisterCallbacks(IShipActions instance)
@@ -210,6 +236,9 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
+            @FireBullet.started -= instance.OnFireBullet;
+            @FireBullet.performed -= instance.OnFireBullet;
+            @FireBullet.canceled -= instance.OnFireBullet;
         }
 
         public void RemoveCallbacks(IShipActions instance)
@@ -239,5 +268,6 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
     public interface IShipActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnFireBullet(InputAction.CallbackContext context);
     }
 }

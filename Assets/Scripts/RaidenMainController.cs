@@ -36,7 +36,7 @@ public class RaidenMainController : MonoBehaviour
             rb2d.constraints = RigidbodyConstraints2D.None;
             rb2d.velocity = new Vector2(inputVector.x * shipSpeed,inputVector.y * shipSpeed);
         }
-        Debug.Log(rb2d.velocity);
+        //Debug.Log(rb2d.velocity);
 
     }
 
