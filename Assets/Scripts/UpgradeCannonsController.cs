@@ -7,6 +7,7 @@ public class UpgradeCannonsController : MonoBehaviour
 {
     private MainShipController cannonController;
     private Animator anim;
+    public GameObject bulletCannon;
     // Start is called before the first frame update
     void Awake()
     {
@@ -18,6 +19,22 @@ public class UpgradeCannonsController : MonoBehaviour
     void Update()
     {
         
+    }
+    
+    public void FireCannonLeft()
+    {   
+        Vector3 theBulletPosition = gameObject.transform.position;
+        theBulletPosition.x -= 0.094f;
+        theBulletPosition.y += 0.08f;
+        Instantiate(bulletCannon, theBulletPosition, gameObject.transform.rotation);
+    }
+
+    public void FireCannonRight()
+    {   
+        Vector3 theBulletPosition = gameObject.transform.position;
+        theBulletPosition.x += 0.094f;
+        theBulletPosition.y += 0.08f;
+        Instantiate(bulletCannon, theBulletPosition, gameObject.transform.rotation);
     }
 
     private void FireCannon(InputAction.CallbackContext cntx)

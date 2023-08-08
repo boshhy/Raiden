@@ -136,6 +136,14 @@ PrefabInstance:
       value: Pickup Auto Cannons
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: b56dfc0eeb7c6ce42b9bb3abdbc389a3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: b56dfc0eeb7c6ce42b9bb3abdbc389a3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: b56dfc0eeb7c6ce42b9bb3abdbc389a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
       objectReference: {fileID: 0}
@@ -650,6 +658,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 5a8c112d7bfb16e418f6adbb63ebc125, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 5a8c112d7bfb16e418f6adbb63ebc125, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1256502247
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 5a8c112d7bfb16e418f6adbb63ebc125, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -903,7 +919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e09fd58ecbcf1fd4594caa0f7dc38e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cannons: {fileID: 1233927222866592213, guid: cbf207f48ccc21b41b62014aa3e91e87, type: 3}
+  Cannons: {fileID: 1809466188513364617, guid: cbf207f48ccc21b41b62014aa3e91e87, type: 3}
 --- !u!61 &1882418743
 BoxCollider2D:
   m_ObjectHideFlags: 0
