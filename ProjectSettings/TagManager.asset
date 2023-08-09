@@ -43,6 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Bullets
+    uniqueID: 2987866387
+    locked: 0
+  - name: Big Space Gun
+    uniqueID: 2969947717
+    locked: 0
   - name: Raiden
     uniqueID: 1256502247
     locked: 0
