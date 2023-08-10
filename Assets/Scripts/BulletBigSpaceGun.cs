@@ -24,7 +24,7 @@ public class BulletBigSpaceGun : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         // Destroy bullet when it comes in contact with an object
-        if (other.tag != "Raiden")
+        if (other.tag == "Enemy")
         {
             Destroy(gameObject);
         }

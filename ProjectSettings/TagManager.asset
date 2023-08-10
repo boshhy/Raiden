@@ -6,12 +6,12 @@ TagManager:
   tags:
   - DamagePlayer1
   - Raiden
-  - enemy
   - PickupCannons
   - PickupRockets
   - PickupZapper
   - PickupBigSpaceGun
   - Bullet Rocket
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -66,4 +66,7 @@ TagManager:
     locked: 0
   - name: Cannons
     uniqueID: 3137833023
+    locked: 0
+  - name: Shield
+    uniqueID: 3725661033
     locked: 0

@@ -12,7 +12,7 @@ public class HomingMissle : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        target = GameObject.FindGameObjectWithTag("enemy").transform;
+        target = GameObject.FindGameObjectWithTag("Enemy").transform;
     }
 
     // Update is called once per frame
@@ -45,7 +45,7 @@ public class HomingMissle : MonoBehaviour
     {
         Debug.Log("Collided with: " + other.tag);
         // Destroy bullet when it comes in contact with an enemy
-        if (other.tag == "enemy")
+        if (other.tag == "Enemy")
         {   
             Debug.Log("Destroyed by: " + other.tag);
             Destroy(gameObject);

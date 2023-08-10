@@ -5,14 +5,17 @@ using UnityEngine.InputSystem;
 
 public class RaidenMainController : MonoBehaviour
 {
+    public static RaidenMainController instance;
     private MainShipController shipController;
     private Rigidbody2D rb2d;
     private Vector2 inputVector = Vector2.zero;
-    public float shipSpeed = 10.0f;
+    public float shipSpeed = 3.0f;
+
 
     // Start is called before the first frame update
     void Awake()
     {
+        instance = this;
         shipController = new MainShipController();
         rb2d = GetComponent<Rigidbody2D>();
     }
