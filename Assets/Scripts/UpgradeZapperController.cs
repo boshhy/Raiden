@@ -32,21 +32,21 @@ public class UpgradeZapperController : MonoBehaviour
     // used to change animation to "always fire"
     private void ChangeAnimToKeepFiring()
     {
-        Debug.Log("in the change animation function");
+        //Debug.Log("in the change animation function");
         anim.SetInteger("zapperAnimation", 2);
     }
 
     // start firing gun
     private void StartFiringZapperGun(InputAction.CallbackContext cntx)
     {
-        Debug.Log("in the startfire function");
+        //Debug.Log("in the startfire function");
         anim.SetInteger("zapperAnimation", 1);
     }
 
     // Stop firing gun
     private void StopFiringZapperGun(InputAction.CallbackContext cntx)
     {
-        Debug.Log("in the stop firing function");
+        //Debug.Log("in the stop firing function");
         anim.SetInteger("zapperAnimation", 0);
     }
 

@@ -33,10 +33,10 @@ public class RaidenHealthController : MonoBehaviour
             invincibleCounter -= Time.deltaTime;
 
             // If we are no longer invincible then change players color back to normal
-            Debug.Log(invincibleCounter);
+            //Debug.Log(invincibleCounter);
             if(invincibleCounter <= 0)
             {
-                Debug.Log("Change back to normal color");
+                //Debug.Log("Change back to normal color");
                 spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1.0f);
             }
         }

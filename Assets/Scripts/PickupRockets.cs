@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupBigSpaceGun : MonoBehaviour
+public class PickupRockets : MonoBehaviour
 {
-    public GameObject bigSpaceGun;
+    public GameObject rockets;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +21,8 @@ public class PickupBigSpaceGun : MonoBehaviour
     {
         if (other.tag == "Raiden")
         {
-            //Debug.Log("should attach big space guns");
-            Instantiate(bigSpaceGun, other.transform);
+            //Debug.Log("should attach cannons");
+            Instantiate(rockets, other.transform);
             Destroy(gameObject);
         }
     }

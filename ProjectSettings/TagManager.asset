@@ -6,6 +6,12 @@ TagManager:
   tags:
   - DamagePlayer1
   - Raiden
+  - enemy
+  - PickupCannons
+  - PickupRockets
+  - PickupZapper
+  - PickupBigSpaceGun
+  - Bullet Rocket
   layers:
   - Default
   - TransparentFX
@@ -42,6 +48,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Rocket (bullet)
+    uniqueID: 2563142253
+    locked: 0
+  - name: Rocket (weapon)
+    uniqueID: 221496833
     locked: 0
   - name: Bullets
     uniqueID: 2987866387

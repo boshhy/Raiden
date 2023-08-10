@@ -71,6 +71,15 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""FireRockets"",
+                    ""type"": ""Button"",
+                    ""id"": ""a1134aae-8aa1-46fe-a527-0af3093d2914"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -183,6 +192,17 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
                     ""action"": ""FireZapperGun"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""936dbdd7-a3e8-482d-902f-ecade0d09436"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""FireRockets"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -208,6 +228,7 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
         m_Ship_FireCannons = m_Ship.FindAction("FireCannons", throwIfNotFound: true);
         m_Ship_FireBigSpaceGun = m_Ship.FindAction("FireBigSpaceGun", throwIfNotFound: true);
         m_Ship_FireZapperGun = m_Ship.FindAction("FireZapperGun", throwIfNotFound: true);
+        m_Ship_FireRockets = m_Ship.FindAction("FireRockets", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -274,6 +295,7 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
     private readonly InputAction m_Ship_FireCannons;
     private readonly InputAction m_Ship_FireBigSpaceGun;
     private readonly InputAction m_Ship_FireZapperGun;
+    private readonly InputAction m_Ship_FireRockets;
     public struct ShipActions
     {
         private @MainShipController m_Wrapper;
@@ -283,6 +305,7 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
         public InputAction @FireCannons => m_Wrapper.m_Ship_FireCannons;
         public InputAction @FireBigSpaceGun => m_Wrapper.m_Ship_FireBigSpaceGun;
         public InputAction @FireZapperGun => m_Wrapper.m_Ship_FireZapperGun;
+        public InputAction @FireRockets => m_Wrapper.m_Ship_FireRockets;
         public InputActionMap Get() { return m_Wrapper.m_Ship; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -307,6 +330,9 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
             @FireZapperGun.started += instance.OnFireZapperGun;
             @FireZapperGun.performed += instance.OnFireZapperGun;
             @FireZapperGun.canceled += instance.OnFireZapperGun;
+            @FireRockets.started += instance.OnFireRockets;
+            @FireRockets.performed += instance.OnFireRockets;
+            @FireRockets.canceled += instance.OnFireRockets;
         }
 
         private void UnregisterCallbacks(IShipActions instance)
@@ -326,6 +352,9 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
             @FireZapperGun.started -= instance.OnFireZapperGun;
             @FireZapperGun.performed -= instance.OnFireZapperGun;
             @FireZapperGun.canceled -= instance.OnFireZapperGun;
+            @FireRockets.started -= instance.OnFireRockets;
+            @FireRockets.performed -= instance.OnFireRockets;
+            @FireRockets.canceled -= instance.OnFireRockets;
         }
 
         public void RemoveCallbacks(IShipActions instance)
@@ -359,5 +388,6 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
         void OnFireCannons(InputAction.CallbackContext context);
         void OnFireBigSpaceGun(InputAction.CallbackContext context);
         void OnFireZapperGun(InputAction.CallbackContext context);
+        void OnFireRockets(InputAction.CallbackContext context);
     }
 }

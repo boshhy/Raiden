@@ -21,7 +21,7 @@ public class PickupZapper : MonoBehaviour
     {
         if (other.tag == "Raiden")
         {
-            Debug.Log("should attach cannons");
+            //Debug.Log("should attach cannons");
             Instantiate(zapper, other.transform);
             Destroy(gameObject);
         }

@@ -39,13 +39,13 @@ public class UpgradeCannonsController : MonoBehaviour
 
     private void FireCannon(InputAction.CallbackContext cntx)
     {
-        Debug.Log("should fire Cannon");
+        //Debug.Log("should fire Cannon");
         anim.SetBool("isFiringCannon", true);
     }
 
     private void StopFiringCannon(InputAction.CallbackContext cntx)
     {
-        Debug.Log("------------- stop cannon firing ---------");
+        //Debug.Log("------------- stop cannon firing ---------");
         anim.SetBool("isFiringCannon", false);
     }
 

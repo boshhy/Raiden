@@ -22,11 +22,13 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 1064349895, guid: 19d1d47663205a547b7767b221caf1a6, type: 3}
-    - time: 0.016666668
+    - time: 0.06666667
       value: {fileID: 534865469, guid: 19d1d47663205a547b7767b221caf1a6, type: 3}
-    - time: 0.033333335
+    - time: 0.13333334
       value: {fileID: -483872974, guid: 19d1d47663205a547b7767b221caf1a6, type: 3}
-    - time: 0.05
+    - time: 0.2
+      value: {fileID: 2078513685, guid: 19d1d47663205a547b7767b221caf1a6, type: 3}
+    - time: 0.25
       value: {fileID: 2078513685, guid: 19d1d47663205a547b7767b221caf1a6, type: 3}
     attribute: m_Sprite
     path: 
@@ -54,12 +56,13 @@ AnimationClip:
     - {fileID: 534865469, guid: 19d1d47663205a547b7767b221caf1a6, type: 3}
     - {fileID: -483872974, guid: 19d1d47663205a547b7767b221caf1a6, type: 3}
     - {fileID: 2078513685, guid: 19d1d47663205a547b7767b221caf1a6, type: 3}
+    - {fileID: 2078513685, guid: 19d1d47663205a547b7767b221caf1a6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.06666667
+    m_StopTime: 0.26666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -80,28 +83,28 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: KeepFiringTheLazer
+    functionName: FireTheLazer
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.016666668
-    functionName: KeepFiringTheLazer
+  - time: 0.06666667
+    functionName: FireTheLazer
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.033333335
-    functionName: KeepFiringTheLazer
+  - time: 0.13333334
+    functionName: FireTheLazer
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.05
-    functionName: KeepFiringTheLazer
+  - time: 0.2
+    functionName: FireTheLazer
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

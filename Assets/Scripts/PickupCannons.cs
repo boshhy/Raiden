@@ -21,7 +21,7 @@ public class PickupCannons : MonoBehaviour
     {
         if (other.tag == "Raiden")
         {
-            Debug.Log("should attach cannons");
+            //Debug.Log("should attach cannons");
             Instantiate(Cannons, other.transform);
             Destroy(gameObject);
         }
