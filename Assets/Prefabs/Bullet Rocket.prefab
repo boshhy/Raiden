@@ -196,3 +196,4 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 2
   rotateSpeed: 200
+  bulletExplosion: {fileID: 1164376994167048502, guid: 92af93481faf86a419525302710b1129, type: 3}

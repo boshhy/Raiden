@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletZapper : MonoBehaviour
 {
     public float speed;
+    public GameObject bulletZapperExplosion;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,9 @@ public class BulletZapper : MonoBehaviour
         if (other.tag == "Enemy")
         {
             Destroy(gameObject);
+            Vector3 theBulletPosition = gameObject.transform.position;
+            theBulletPosition.y += 0.185f;
+            Instantiate(bulletZapperExplosion, theBulletPosition, transform.rotation * Quaternion.Euler(0, 0, 90));
         }
     }
 }

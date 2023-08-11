@@ -12,6 +12,12 @@ TagManager:
   - PickupBigSpaceGun
   - Bullet Rocket
   - Enemy
+  - PickupTripleShot
+  - Bullet
+  - Bullet Cannon
+  - Bullet Big Space Gun
+  - Bullet Zapper
+  - Dead
   layers:
   - Default
   - TransparentFX
@@ -49,6 +55,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Pickups
+    uniqueID: 2048920927
+    locked: 0
+  - name: Asteroid
+    uniqueID: 431059585
+    locked: 0
   - name: Rocket (bullet)
     uniqueID: 2563142253
     locked: 0
@@ -69,4 +81,7 @@ TagManager:
     locked: 0
   - name: Shield
     uniqueID: 3725661033
+    locked: 0
+  - name: Explosions
+    uniqueID: 2262918961
     locked: 0

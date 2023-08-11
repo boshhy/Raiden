@@ -8,6 +8,7 @@ public class HomingMissle : MonoBehaviour
     public float speed = 5.0f;
     public float rotateSpeed = 200.0f;
     private Rigidbody2D rb;
+    public GameObject bulletExplosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,8 @@ public class HomingMissle : MonoBehaviour
         }
         else
         {
+            
+            rb.angularVelocity = 0.0f;
             rb.velocity = transform.up * speed;
         }
     }
@@ -48,7 +51,9 @@ public class HomingMissle : MonoBehaviour
         if (other.tag == "Enemy")
         {   
             Debug.Log("Destroyed by: " + other.tag);
+
             Destroy(gameObject);
+            Instantiate(bulletExplosion, gameObject.transform.position, gameObject.transform.rotation);
         }
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 470642350229262911}
   m_Layer: 0
   m_Name: Bullet Big Space Gun
-  m_TagString: Untagged
+  m_TagString: Bullet Big Space Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1307100909
-  m_SortingLayer: 1
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -2032946164, guid: 69467ec530e7529408867f0c9eed20eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

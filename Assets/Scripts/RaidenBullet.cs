@@ -17,7 +17,8 @@ public class RaidenBullet : MonoBehaviour
     void Update()
     {
         // Move the bullet
-        transform.position += new Vector3(0.0f, speed * Time.deltaTime, 0.0f);    
+        //transform.position += new Vector3(0.0f, speed * Time.deltaTime, 0.0f);  
+        transform.Translate(Vector3.up * speed * Time.deltaTime);  
     }
 
     // Used to hurt player

@@ -11,6 +11,8 @@ public class RaidenFireBullet : MonoBehaviour
 
     private float TimeBeforeFiring = 0.0f;
     private float TimeBetweenBullets = 0.02f;
+    public bool canTripleShot = false;
+    public bool  canQuintupleShot = false;
     // Start is called before the first frame update
     void Awake()
     {
@@ -30,6 +32,19 @@ public class RaidenFireBullet : MonoBehaviour
             if (TimeBeforeFiring <= 0.0f)
             {
                 TimeBeforeFiring = TimeBetweenBullets;
+
+                if (canTripleShot)
+                {
+                    Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, 5));
+                    Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, -5));
+                }
+
+                if (canQuintupleShot)
+                {
+                    Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, 10));
+                    Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, -10));
+                }
+
                 Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
             }
             else
@@ -52,6 +67,21 @@ public class RaidenFireBullet : MonoBehaviour
     private void StopFiring(InputAction.CallbackContext cntx)
     {
         isFiring = false;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "PickupTripleShot")
+        {
+            if (!canTripleShot)
+            {
+                canTripleShot = true;
+            }
+            else if (canTripleShot && !canQuintupleShot)
+            {
+                canQuintupleShot = true;
+            }
+        }
     }
 
     private void OnEnable()
