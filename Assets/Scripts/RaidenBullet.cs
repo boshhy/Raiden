@@ -6,6 +6,7 @@ public class RaidenBullet : MonoBehaviour
 {
     // Controls the speed of the bullet
     public float speed;
+    // public GameObject bulletExplosion;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +18,7 @@ public class RaidenBullet : MonoBehaviour
     void Update()
     {
         // Move the bullet
-        //transform.position += new Vector3(0.0f, speed * Time.deltaTime, 0.0f);  
+        // transform.position += new Vector3(0.0f, speed * Time.deltaTime, 0.0f);  
         transform.Translate(Vector3.up * speed * Time.deltaTime);  
     }
 
@@ -28,6 +29,7 @@ public class RaidenBullet : MonoBehaviour
         if (other.tag == "Enemy")
         {
             Destroy(gameObject);
+            // Instantiate(bulletExplosion, gameObject.transform.position, gameObject.transform.rotation);
         }
     }
 }

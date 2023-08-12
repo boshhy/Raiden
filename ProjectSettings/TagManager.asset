@@ -61,6 +61,12 @@ TagManager:
   - name: Asteroid
     uniqueID: 431059585
     locked: 0
+  - name: Enemy Nairan Flame
+    uniqueID: 3283496107
+    locked: 0
+  - name: Enemy Nairan Ship
+    uniqueID: 3026491025
+    locked: 0
   - name: Rocket (bullet)
     uniqueID: 2563142253
     locked: 0
@@ -75,6 +81,9 @@ TagManager:
     locked: 0
   - name: Raiden
     uniqueID: 1256502247
+    locked: 0
+  - name: Base Engine
+    uniqueID: 4232563583
     locked: 0
   - name: Cannons
     uniqueID: 3137833023

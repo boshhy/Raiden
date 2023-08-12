@@ -6,6 +6,7 @@ public class BulletCannon : MonoBehaviour
 {
     // Controls the speed of the bullet
     public float speed;
+    public GameObject bulletExplosion;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,7 @@ public class BulletCannon : MonoBehaviour
         if (other.tag == "Enemy")
         {
             Destroy(gameObject);
+            Instantiate(bulletExplosion, gameObject.transform.position, gameObject.transform.rotation);
         }
     }
 }
