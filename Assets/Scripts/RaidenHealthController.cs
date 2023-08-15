@@ -55,6 +55,7 @@ public class RaidenHealthController : MonoBehaviour
             {
                 // Change to zero so UI can reference how many hearts to draw
                 currentHealth = 0;
+                Destroy(gameObject);
                 
                 // Instantiate a kill effect and respawn player
                 // Instantiate(killEffect, transform.position, transform.rotation);
