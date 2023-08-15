@@ -73,6 +73,7 @@ public class RaidenFireBullet : MonoBehaviour
     {
         if (other.tag == "PickupTripleShot")
         {
+            Destroy(other.gameObject);
             if (!canTripleShot)
             {
                 canTripleShot = true;

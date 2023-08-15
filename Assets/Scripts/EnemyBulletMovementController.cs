@@ -19,10 +19,9 @@ public class EnemyBulletMovementController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("hit: " + other.tag);
+       // TODO Maybe add explosion for when bullet hits Raiden
         if (other.tag == "Raiden")
         {
-            Debug.Log("raiden should be dealt damage");
             Destroy(gameObject);
             RaidenHealthController.instance.DealDamage();
         }

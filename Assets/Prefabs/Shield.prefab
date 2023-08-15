@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7810421471053623143}
   m_Layer: 0
   m_Name: Shield
-  m_TagString: Untagged
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -569306263
-  m_SortingLayer: 7
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_Sprite: {fileID: -591177918, guid: d50751b167a58ca40970028a42c9b61f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.2}
