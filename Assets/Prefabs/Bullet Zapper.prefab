@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4543109163393517448}
   - component: {fileID: 3406658184133741552}
   - component: {fileID: 4499796642603535509}
+  - component: {fileID: -910112540824427736}
   m_Layer: 0
   m_Name: Bullet Zapper
   m_TagString: Bullet Zapper
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1307100909
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -527673954, guid: 659ff9c5e24af3649ab3c89db8f9aba8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -167,3 +168,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.062405735, y: 0.3265596}
   m_EdgeRadius: 0
+--- !u!114 &-910112540824427736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6751690429150792808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432c77221f27aae48987fa6e2b62377a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

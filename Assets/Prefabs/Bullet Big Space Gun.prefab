@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1401142147436419103}
   - component: {fileID: 7807505781170667737}
   - component: {fileID: 470642350229262911}
+  - component: {fileID: -1230364828567399602}
   m_Layer: 0
   m_Name: Bullet Big Space Gun
   m_TagString: Bullet Big Space Gun
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1307100909
-  m_SortingLayer: 5
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: -2032946164, guid: 69467ec530e7529408867f0c9eed20eb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -157,3 +158,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   bulletExplosion: {fileID: 1164376994167048502, guid: 8bc83b18af9e2714b817588a209dd5b7, type: 3}
+--- !u!114 &-1230364828567399602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484486387189258561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432c77221f27aae48987fa6e2b62377a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

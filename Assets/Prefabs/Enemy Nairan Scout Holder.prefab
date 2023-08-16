@@ -79,6 +79,7 @@ GameObject:
   - component: {fileID: 3413858481124943500}
   - component: {fileID: 720167228523960747}
   - component: {fileID: 6744278125857577458}
+  - component: {fileID: 1826219366579181803}
   m_Layer: 0
   m_Name: Enemy Nairan Scout Ship
   m_TagString: Enemy
@@ -328,7 +329,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interpolationPeriod: 4
+  hitExplosion: {fileID: 1164376994167048502, guid: 92af93481faf86a419525302710b1129, type: 3}
   enemyBullet: {fileID: 4835088501981270860, guid: 525ed1c7c82d24547b0baa6979dedb3b, type: 3}
+--- !u!114 &1826219366579181803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6024198420028593450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1df87c82aa92146b2840c01af8a9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8204811931942745784
 GameObject:
   m_ObjectHideFlags: 0

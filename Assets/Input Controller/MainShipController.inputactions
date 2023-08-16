@@ -140,8 +140,30 @@
                 },
                 {
                     "name": "",
+                    "id": "042468b7-a48d-4f72-999d-16885725ecd3",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireBullet",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "b860c4b8-7c1d-4190-ae0e-ee76064b8d8e",
                     "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireCannons",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "adf8776a-367a-4cc5-a8b6-67af43bfe15a",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -162,6 +184,17 @@
                 },
                 {
                     "name": "",
+                    "id": "ffc3672d-9835-4ff4-b975-7a4e40d22614",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireBigSpaceGun",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "adf00f60-660a-4547-8265-d03698ef2410",
                     "path": "<Keyboard>/x",
                     "interactions": "",
@@ -173,8 +206,30 @@
                 },
                 {
                     "name": "",
+                    "id": "83fd871d-ac9e-4f14-a9e2-5654ad55f95e",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireZapperGun",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "936dbdd7-a3e8-482d-902f-ecade0d09436",
                     "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FireRockets",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "915d5483-7388-4fbd-88d6-2ecb55e44112",
+                    "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

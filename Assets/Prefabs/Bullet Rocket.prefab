@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 227991533044525589}
   - component: {fileID: 1694649335241155773}
   - component: {fileID: 899073656195970149}
+  - component: {fileID: -3116097351854111321}
   m_Layer: 0
   m_Name: Bullet Rocket
   m_TagString: Bullet Rocket
@@ -74,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1731825043
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 1511097948, guid: 1f476faa7d4baea46825f8088af4f7ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -197,3 +198,15 @@ MonoBehaviour:
   speed: 2
   rotateSpeed: 200
   bulletExplosion: {fileID: 1164376994167048502, guid: 92af93481faf86a419525302710b1129, type: 3}
+--- !u!114 &-3116097351854111321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7008326518651836732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432c77221f27aae48987fa6e2b62377a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

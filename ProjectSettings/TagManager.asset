@@ -18,6 +18,11 @@ TagManager:
   - Bullet Big Space Gun
   - Bullet Zapper
   - Dead
+  - Shield
+  - Enemy Bullet
+  - Kill Zone
+  - Kill Zone For Objects
+  - Background
   layers:
   - Default
   - TransparentFX
@@ -54,6 +59,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3426663757
     locked: 0
   - name: Pickups
     uniqueID: 2048920927

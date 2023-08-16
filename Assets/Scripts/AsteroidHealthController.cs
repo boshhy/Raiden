@@ -87,6 +87,12 @@ public class AsteroidHealthController : MonoBehaviour
             }
         }
 
+        if (other.tag == "Raiden")
+        {
+            // kill raiden
+            RaidenHealthController.instance.KillRaiden();
+        }
+
 
 
     }

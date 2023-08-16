@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8635213358314796728}
   - component: {fileID: 6655603242677745825}
   - component: {fileID: 2043122403028805550}
+  - component: {fileID: -3600601367143550139}
   m_Layer: 0
   m_Name: Bullet Cannon
   m_TagString: Bullet Cannon
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1307100909
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -393212301, guid: a128c6c4dd67ba24cbd78dedb99875d7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -157,3 +158,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.04, y: 0.1}
   m_Direction: 0
+--- !u!114 &-3600601367143550139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8620394422693312396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 432c77221f27aae48987fa6e2b62377a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

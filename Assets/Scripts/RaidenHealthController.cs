@@ -7,6 +7,7 @@ public class RaidenHealthController : MonoBehaviour
     public static RaidenHealthController instance;
     public int currentHealth = 4;
     public int maxHealth = 4;
+    public GameObject hitExplosion;
 
     private float invincibleLength = 0.2f;
     private float invincibleCounter = 0.0f;
@@ -55,6 +56,7 @@ public class RaidenHealthController : MonoBehaviour
             {
                 // Change to zero so UI can reference how many hearts to draw
                 currentHealth = 0;
+                Instantiate(hitExplosion, transform.position, transform.rotation);
                 Destroy(gameObject);
                 
                 // Instantiate a kill effect and respawn player
@@ -77,5 +79,12 @@ public class RaidenHealthController : MonoBehaviour
             // Update UI controller to display hearts
             //UIController.instance.UpdateHealthDisplay();
         }
+    }
+
+    public void KillRaiden()
+    {
+        currentHealth = 0;
+        Instantiate(hitExplosion, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }

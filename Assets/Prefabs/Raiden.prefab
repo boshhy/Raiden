@@ -79,7 +79,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1256502247
-  m_SortingLayer: 5
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 501bb8ce1701dc74fa7285fc70ab0627, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -235,6 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 4
   maxHealth: 4
+  hitExplosion: {fileID: 1164376994167048502, guid: 8bc83b18af9e2714b817588a209dd5b7, type: 3}
 --- !u!114 &2491006231750599166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +261,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 9000654445456508938, guid: 26f60d89521ed5a40938ac9d500774ab, type: 3}
+  canTripleShot: 0
+  canQuintupleShot: 0
 --- !u!1 &6258715298887084415
 GameObject:
   m_ObjectHideFlags: 0

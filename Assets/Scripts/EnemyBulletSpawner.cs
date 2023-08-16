@@ -6,6 +6,7 @@ public class EnemyBulletSpawner : MonoBehaviour
 {
     private float time = 0.0f;
     public float interpolationPeriod = 4.0f;
+    public GameObject hitExplosion;
 
     public GameObject enemyBullet;
 
@@ -25,6 +26,7 @@ public class EnemyBulletSpawner : MonoBehaviour
             time = time - interpolationPeriod;
             Instantiate(enemyBullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, 90));
         }
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -32,6 +34,7 @@ public class EnemyBulletSpawner : MonoBehaviour
         if (other.tag == "Raiden")
         {
             // TODO Add explosion effect for enemy crash into Raiden
+            Instantiate(hitExplosion, transform.position, transform.rotation);
             Debug.Log("raiden should be dealt damage");
             Destroy(gameObject);
             RaidenHealthController.instance.DealDamage();
