@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyNairanScoutHealthController : MonoBehaviour
 {
-    public int currentHealth = 4;
-    public int maxHealth = 4;
+    private int currentHealth = 4;
+    private int maxHealth = 4;
     public GameObject parentHolder;
     //private SpriteRenderer spriteRenderer;
     private Animator anim;
@@ -32,6 +32,11 @@ public class EnemyNairanScoutHealthController : MonoBehaviour
     void DestoryNairanShip()
     {
         Destroy(parentHolder);
+    }
+
+    void SpawnPickup()
+    {
+        PickupDrop.instance.GetRandomPickupProbability(1, gameObject.transform);
     }
 
     void OnTriggerEnter2D(Collider2D other)

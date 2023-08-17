@@ -18,9 +18,9 @@ public class HomingMissle : MonoBehaviour
         
         allEnemies = GameObject.FindGameObjectsWithTag("Enemy");
 
-        target = GameObject.FindGameObjectWithTag("Enemy").transform;
+        //target = GameObject.FindGameObjectWithTag("Enemy").transform;
 
-        float minDistance = Vector2.Distance(gameObject.transform.position, target.transform.position);
+        float minDistance = float.PositiveInfinity;//Vector2.Distance(gameObject.transform.position, target.transform.position);
 
 
         for (int i = 0; i < allEnemies.Length; i++)
