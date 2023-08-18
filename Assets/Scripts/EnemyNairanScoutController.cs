@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyNairanScoutController : MonoBehaviour
 {
-    public float shipSpeed = 5.0f;
-    public float shipDownwardSpeed = 1.0f;
+    private float shipSpeed = 1.0f;
+    private float shipDownwardSpeed = 0.2f;
 
 
     public Transform pointA;

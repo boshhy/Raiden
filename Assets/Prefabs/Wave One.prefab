@@ -1,0 +1,1356 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &190811988223946559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635119702700180545}
+  m_Layer: 0
+  m_Name: Wave One
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635119702700180545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190811988223946559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7397359750044387410}
+  - {fileID: 5411059541067680893}
+  - {fileID: 1318591409149175743}
+  - {fileID: 5940003104016210561}
+  - {fileID: 4063861470576737802}
+  - {fileID: 7030718193329772188}
+  - {fileID: 6202176772676155920}
+  - {fileID: 7938799616344076715}
+  - {fileID: 8779913981817623820}
+  - {fileID: 7475462533866385041}
+  - {fileID: 4864353327649371871}
+  - {fileID: 6363695885711059896}
+  - {fileID: 5512334835565639369}
+  - {fileID: 6582240111452696864}
+  - {fileID: 860112951448535748}
+  - {fileID: 6931685861355022600}
+  - {fileID: 1615631816697114732}
+  - {fileID: 294091072853656080}
+  - {fileID: 8188054073406935669}
+  - {fileID: 8538338351414738493}
+  - {fileID: 6222582136322162933}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &115117585743058560
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &6363695885711059896 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 115117585743058560}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &184728834070187032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &6582240111452696864 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 184728834070187032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &839842434109876153
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &5940003104016210561 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 839842434109876153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1122403595138710989
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &6222582136322162933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 1122403595138710989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1142251356468004648
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &6202176772676155920 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 1142251356468004648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1359920645808484677
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &5411059541067680893 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 1359920645808484677}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1564761414526503921
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &5512334835565639369 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 1564761414526503921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1894114322011261927
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &4864353327649371871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 1894114322011261927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2310377786533488692
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &8779913981817623820 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 2310377786533488692}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2911953916527505229
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &8188054073406935669 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 2911953916527505229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3438177372386018053
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &8538338351414738493 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 3438177372386018053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4027574125496339603
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &7938799616344076715 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 4027574125496339603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4060762071392693156
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &7030718193329772188 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 4060762071392693156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4177883550681945136
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &6931685861355022600 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 4177883550681945136}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4500983845673849769
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &7475462533866385041 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 4500983845673849769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4566696319533102442
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &7397359750044387410 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 4566696319533102442}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5441485803262204551
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &1318591409149175743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 5441485803262204551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5738564453205364052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &1615631816697114732 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 5738564453205364052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5919741228957319164
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &860112951448535748 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 5919741228957319164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6763363346767937320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &294091072853656080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 6763363346767937320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7038322600911487794
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 635119702700180545}
+    m_Modifications:
+    - target: {fileID: 3370875680190569131, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_Name
+      value: Enemy Nairan Scout Holder Left 1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+--- !u!4 &4063861470576737802 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6469589521707154744, guid: c05bb8c2c26b61447836622c9053c8e9, type: 3}
+  m_PrefabInstance: {fileID: 7038322600911487794}
+  m_PrefabAsset: {fileID: 0}
