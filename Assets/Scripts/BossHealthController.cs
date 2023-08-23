@@ -15,6 +15,8 @@ public class BossHealthController : MonoBehaviour
     public bool canTripleTorpedo = false;
     public bool isHalfHealth = false;
     public bool isTenPercentHealth = false;
+
+    public HealthBar healthBar;
     
     //private SpriteRenderer spriteRenderer;
     private Animator anim;
@@ -28,7 +30,9 @@ public class BossHealthController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        healthBar.SetMaxHealth(maxHealth);
     }
+
 
     // Update is called once per frame
     void Update()
@@ -151,8 +155,16 @@ public class BossHealthController : MonoBehaviour
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
                 //anim.SetBool("isExploding", true);
-            }
+            } 
         }
-        Debug.Log("BOSS SHIP HP: " + currentHealth);
+
+        if (other.tag == "Raiden")
+        {
+            RaidenHealthController.instance.KillRaiden();
+            Destroy(other.gameObject);
+        }
+
+        healthBar.SetHealth(currentHealth);
+        //Debug.Log("BOSS SHIP HP: " + currentHealth);
     }
 }

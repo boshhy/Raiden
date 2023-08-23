@@ -7,12 +7,14 @@ public class BossShieldHealthController : MonoBehaviour
     private int currentHealth = 400;
     private int maxHealth = 400;
     private Animator anim;
+    public HealthBar healthBar;
    // private SpriteRenderer spriteRenderer;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        healthBar.SetMaxHealth(maxHealth);
         //spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -74,6 +76,12 @@ public class BossShieldHealthController : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        Debug.Log(currentHealth);
+        if (other.tag == "Raiden")
+        {
+            RaidenHealthController.instance.KillRaiden();
+            Destroy(other.gameObject);
+        }
+
+        healthBar.SetHealth(currentHealth);
     }
 }
