@@ -20,7 +20,7 @@ public class KillProjectileWithKillZone : MonoBehaviour
     {
         if(other.tag == "Kill Zone")
         {
-            Debug.Log("Projectile has hit the KILL ZONE");
+            //Debug.Log("Projectile has hit the KILL ZONE");
             Destroy(gameObject);
         }
     }

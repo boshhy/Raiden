@@ -31,17 +31,17 @@ public class FireBossBolt : MonoBehaviour
         {
             TimeBeforeFiring = TimeBetweenBullets;
 
-            // if (canTripleShot)
-            // {
+            if (BossHealthController.instance.canTripleShot)
+            {
                  Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, 20));
                  Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, -20));
-            // }
+            }
 
-            // if (canQuintupleShot)
-            // {
+            if (BossHealthController.instance.canQuintupleShot)
+            {
                  Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, 10));
                  Instantiate(bullet, transform.position, transform.rotation * Quaternion.Euler(0, 0, -10));
-            // }
+            }
 
             Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
         }
