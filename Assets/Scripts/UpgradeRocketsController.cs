@@ -33,6 +33,7 @@ public class UpgradeRocketsController : MonoBehaviour
         theBulletPosition.x -= 0.0625f;
         theBulletPosition.y += 0.01f;
         Instantiate(bulletRocket, theBulletPosition, gameObject.transform.rotation);
+        AudioManager.instance.PlaySFX(10);
     }
 
     public void FireLeftMiddleRocket()
@@ -41,6 +42,7 @@ public class UpgradeRocketsController : MonoBehaviour
         theBulletPosition.x -= 0.104f;
         theBulletPosition.y -= 0.03f;
         Instantiate(bulletRocket, theBulletPosition, gameObject.transform.rotation);
+        AudioManager.instance.PlaySFX(10);
     }
 
     public void FireLeftOutsideRocket()
@@ -49,6 +51,7 @@ public class UpgradeRocketsController : MonoBehaviour
         theBulletPosition.x -= 0.145f;
         theBulletPosition.y -= 0.074f;
         Instantiate(bulletRocket, theBulletPosition, gameObject.transform.rotation);
+        AudioManager.instance.PlaySFX(10);
     }
     
     public void FireRightInsideRocket()
@@ -57,6 +60,7 @@ public class UpgradeRocketsController : MonoBehaviour
         theBulletPosition.x += 0.073f;
         theBulletPosition.y += 0.01f;
         Instantiate(bulletRocket, theBulletPosition, gameObject.transform.rotation);
+        AudioManager.instance.PlaySFX(10);
     }
 
     public void FireRightMiddleRocket()
@@ -65,6 +69,7 @@ public class UpgradeRocketsController : MonoBehaviour
         theBulletPosition.x += 0.114f;
         theBulletPosition.y -= 0.03f;
         Instantiate(bulletRocket, theBulletPosition, gameObject.transform.rotation);
+        AudioManager.instance.PlaySFX(10);
     }
 
     public void FireRightOutsideRocket()
@@ -73,6 +78,7 @@ public class UpgradeRocketsController : MonoBehaviour
         theBulletPosition.x += 0.157f;
         theBulletPosition.y -= 0.074f;
         Instantiate(bulletRocket, theBulletPosition, gameObject.transform.rotation);
+        AudioManager.instance.PlaySFX(10);
     }
 
     private void StartFiringRockets(InputAction.CallbackContext cntx)

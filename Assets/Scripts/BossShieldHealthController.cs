@@ -29,6 +29,7 @@ public class BossShieldHealthController : MonoBehaviour
         // Debug.Log(currentHealth);
         if (other.tag == "Bullet" || other.tag == "Bullet Zapper")
         {
+            AudioManager.instance.PlaySFX(1);
             currentHealth--;
             anim.SetInteger("hurtNumber", 1);
             
@@ -36,6 +37,7 @@ public class BossShieldHealthController : MonoBehaviour
 
             if (currentHealth <= 0)
             {
+                AudioManager.instance.PlaySFX(2);
                 currentHealth = 0;
                 Destroy(gameObject);
             }

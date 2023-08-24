@@ -75,6 +75,7 @@ public class HomingMissle : MonoBehaviour
 
             Destroy(gameObject);
             Instantiate(bulletExplosion, gameObject.transform.position, gameObject.transform.rotation);
+            AudioManager.instance.PlaySFX(5);
         }
     }
 }

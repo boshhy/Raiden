@@ -22,6 +22,7 @@ public class PickupShield : MonoBehaviour
         if (other.tag == "Raiden")
         {
             //Debug.Log("should attach cannons");
+            AudioManager.instance.PlaySFX(3);
             Instantiate(shield, other.transform);
             Destroy(gameObject);
         }

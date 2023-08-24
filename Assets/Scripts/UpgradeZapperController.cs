@@ -26,7 +26,8 @@ public class UpgradeZapperController : MonoBehaviour
     {
         Vector3 theBulletPosition = gameObject.transform.position;
         theBulletPosition.y += 0.1f;
-        Instantiate(bulletZapper, theBulletPosition, gameObject.transform.rotation);  
+        Instantiate(bulletZapper, theBulletPosition, gameObject.transform.rotation);
+        AudioManager.instance.PlaySFX(8);  
     }
 
     // used to change animation to "always fire"

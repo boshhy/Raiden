@@ -24,6 +24,7 @@ public class PickupBigSpaceGun : MonoBehaviour
             //Debug.Log("should attach big space guns");
             Instantiate(bigSpaceGun, other.transform);
             Destroy(gameObject);
+            AudioManager.instance.PlaySFX(3);
         }
     }
 }

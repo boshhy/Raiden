@@ -24,6 +24,7 @@ public class PickupZapper : MonoBehaviour
             //Debug.Log("should attach cannons");
             Instantiate(zapper, other.transform);
             Destroy(gameObject);
+            AudioManager.instance.PlaySFX(3);
         }
     }
 }

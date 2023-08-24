@@ -24,6 +24,7 @@ public class PickupRockets : MonoBehaviour
             //Debug.Log("should attach cannons");
             Instantiate(rockets, other.transform);
             Destroy(gameObject);
+            AudioManager.instance.PlaySFX(3);
         }
     }
 }

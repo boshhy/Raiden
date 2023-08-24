@@ -30,6 +30,7 @@ public class BulletZapper : MonoBehaviour
             Vector3 theBulletPosition = gameObject.transform.position;
             theBulletPosition.y += 0.185f;
             Instantiate(bulletZapperExplosion, theBulletPosition, transform.rotation * Quaternion.Euler(0, 0, 90));
+            AudioManager.instance.PlaySFX(7);
         }
     }
 }

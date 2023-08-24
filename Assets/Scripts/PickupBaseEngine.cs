@@ -25,6 +25,7 @@ public class PickupBaseEngine : MonoBehaviour
             Instantiate(baseEngine, other.transform);
             Destroy(gameObject);
             RaidenMainController.instance.shipSpeed = 6.0f;
+            AudioManager.instance.PlaySFX(3);
         }
     }
 }

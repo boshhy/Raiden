@@ -24,6 +24,7 @@ public class PickupCannons : MonoBehaviour
             //Debug.Log("should attach cannons");
             Instantiate(Cannons, other.transform);
             Destroy(gameObject);
+            AudioManager.instance.PlaySFX(3);
         }
     }
 }

@@ -103,6 +103,7 @@ public class BossHealthController : MonoBehaviour
         {
             currentHealth--;
             anim.SetInteger("hurtNumber", 1);
+            AudioManager.instance.PlaySFX(1);
             
             //spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0.2f);
 
@@ -166,5 +167,10 @@ public class BossHealthController : MonoBehaviour
 
         healthBar.SetHealth(currentHealth);
         //Debug.Log("BOSS SHIP HP: " + currentHealth);
+    }
+
+    public void PlayExplosionSound()
+    {
+        AudioManager.instance.PlaySFXNoStop(4);
     }
 }

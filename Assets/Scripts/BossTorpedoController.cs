@@ -15,7 +15,7 @@ public class BossTorpedoController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (BossMovementController.instance.isStopped)
+        if (BossMovementController.instance.isStopped && BossHealthController.instance.tag != "Dead")
         {
             Instantiate(bullet, transform.position + new Vector3(-1.2f, 0.5f, 0.0f), bullet.transform.rotation);
             Instantiate(bullet, transform.position + new Vector3(1.2f, 0.5f, 0.0f), bullet.transform.rotation);

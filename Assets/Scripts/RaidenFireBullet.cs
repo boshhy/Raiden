@@ -46,6 +46,7 @@ public class RaidenFireBullet : MonoBehaviour
                 }
 
                 Instantiate(bullet, gameObject.transform.position, gameObject.transform.rotation);
+                AudioManager.instance.PlaySFX(0);
             }
             else
             {

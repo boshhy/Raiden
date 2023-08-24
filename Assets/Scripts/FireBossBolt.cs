@@ -27,7 +27,7 @@ public class FireBossBolt : MonoBehaviour
     void FixedUpdate()
     {
 
-        if (TimeBeforeFiring <= 0.0f)
+        if (TimeBeforeFiring <= 0.0f && BossHealthController.instance.tag != "Dead")
         {
             TimeBeforeFiring = TimeBetweenBullets;
 

@@ -20,6 +20,7 @@ public class PickupTripleShot : MonoBehaviour
         if (other.tag == "Raiden")
         {
             Destroy(gameObject);
+            AudioManager.instance.PlaySFX(3);
         }
     }
 }

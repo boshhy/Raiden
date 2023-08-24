@@ -29,6 +29,7 @@ public class BulletBigSpaceGun : MonoBehaviour
         {
             Destroy(gameObject);
             Instantiate(bulletExplosion, gameObject.transform.position, gameObject.transform.rotation);
+            AudioManager.instance.PlaySFX(6);
         }
     }
 }
