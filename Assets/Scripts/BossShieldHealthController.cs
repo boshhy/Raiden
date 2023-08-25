@@ -40,6 +40,7 @@ public class BossShieldHealthController : MonoBehaviour
                 AudioManager.instance.PlaySFX(2);
                 currentHealth = 0;
                 Destroy(gameObject);
+                Destroy(healthBar.gameObject);
             }
         }
         if (other.tag == "Bullet Rocket")
@@ -52,6 +53,7 @@ public class BossShieldHealthController : MonoBehaviour
             {
                 currentHealth = 0;
                 Destroy(gameObject);
+                Destroy(healthBar.gameObject);
             }
         }
         if (other.tag == "Bullet Cannon")
@@ -64,6 +66,7 @@ public class BossShieldHealthController : MonoBehaviour
             {
                 currentHealth = 0;
                 Destroy(gameObject);
+                Destroy(healthBar.gameObject);
             }
         }
         if (other.tag == "Bullet Big Space Gun")
@@ -76,12 +79,14 @@ public class BossShieldHealthController : MonoBehaviour
             {
                 currentHealth = 0;
                 Destroy(gameObject);
+                Destroy(healthBar.gameObject);
             }
         }
         if (other.tag == "Raiden")
         {
             RaidenHealthController.instance.KillRaiden();
             Destroy(other.gameObject);
+            Destroy(healthBar.gameObject);
         }
 
         healthBar.SetHealth(currentHealth);

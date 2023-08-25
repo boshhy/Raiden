@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource[] SFX;
 
+
     void Awake()
     {   
         // If this instance doesnt already exist, create it
@@ -42,5 +43,23 @@ public class AudioManager : MonoBehaviour
     {
         SFX[sfx].Play();
         Debug.Log("Played song number:" + sfx);
+    }
+    
+    public void StopPlayingMusic(int sfx)
+    {
+        SFX[sfx].Stop();
+    }
+
+    public void StartEpicMusic()
+    {
+        StartCoroutine(EpicMusic());
+    }
+
+    IEnumerator EpicMusic()
+    {
+        Debug.Log("inside BEGGINING of epic music func");
+        yield return new WaitForSeconds(7f);
+        Debug.Log("inside LAST PAER of epic music func");
+        AudioManager.instance.PlaySFX(13);
     }
 }

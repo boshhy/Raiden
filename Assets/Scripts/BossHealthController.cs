@@ -112,6 +112,7 @@ public class BossHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
+                Destroy(healthBar.gameObject);
                 //Destroy(gameObject);
                 //anim.SetBool("isExploding", true);
             }
@@ -127,6 +128,7 @@ public class BossHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
+                Destroy(healthBar.gameObject);
                 //anim.SetBool("isExploding", true);
             }
         }
@@ -141,6 +143,7 @@ public class BossHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
+                Destroy(healthBar.gameObject);
                 //anim.SetBool("isExploding", true);
             }
         }
@@ -155,6 +158,8 @@ public class BossHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
+                Destroy(healthBar.gameObject);
+
                 //anim.SetBool("isExploding", true);
             } 
         }
@@ -172,5 +177,12 @@ public class BossHealthController : MonoBehaviour
     public void PlayExplosionSound()
     {
         AudioManager.instance.PlaySFXNoStop(4);
+    }
+
+    public void PlayVictorySound()
+    {
+        AudioManager.instance.StopPlayingMusic(12);
+        AudioManager.instance.PlaySFX(11);
+        AudioManager.instance.StartEpicMusic();
     }
 }
