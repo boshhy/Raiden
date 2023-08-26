@@ -27,6 +27,11 @@ public class EnemyBulletMovementController : MonoBehaviour
             Destroy(gameObject);
             
             RaidenHealthController.instance.DealDamage();
+        }
+        else if (other.tag == "Shield")
+        {
+            Instantiate(hitExplosion, transform.position, transform.rotation);
+            Destroy(gameObject);
         }      
     }
 }

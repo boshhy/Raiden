@@ -23,8 +23,7 @@ public class RaidenMainController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // inputVector = shipController.Ship.Move.ReadValue<Vector2>();
-        //Debug.Log(inputVector);
+        
     }
 
     void FixedUpdate()
@@ -37,7 +36,123 @@ public class RaidenMainController : MonoBehaviour
         else
         {
             rb2d.constraints = RigidbodyConstraints2D.None;
-            rb2d.velocity = new Vector2(inputVector.x * shipSpeed,inputVector.y * shipSpeed);
+            
+            if (transform.position.x > -8.8 && transform.position.x < 8.8 && transform.position.y > -4.9 && transform.position.y < 4.9)
+            {
+                rb2d.velocity = new Vector2(inputVector.x * shipSpeed,inputVector.y * shipSpeed);
+            }
+            else
+            {
+                // Bottom-Left
+                if(transform.position.x <= -8.8 && transform.position.y <= -4.9)
+                {
+                    rb2d.velocity = new Vector2(0.0f, 0.0f);
+                    //rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
+                    
+                    if(inputVector.x > 0.0f && inputVector.y > 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(inputVector.x * shipSpeed,inputVector.y * shipSpeed);
+                    }
+                    else if (inputVector.x > 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(inputVector.x * shipSpeed, 0.0f);
+                    }
+                    else if (inputVector.y > 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(0.0f, inputVector.y * shipSpeed);
+                    }
+                }
+                // Top-Right
+                else if(transform.position.x >= 8.8 && transform.position.y >= 4.9)
+                {
+                    rb2d.velocity = new Vector2(0.0f, 0.0f);
+                    //rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
+                    
+                    if(inputVector.x < 0.0f && inputVector.y < 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(inputVector.x * shipSpeed,inputVector.y * shipSpeed);
+                    }
+                    else if (inputVector.x < 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(inputVector.x * shipSpeed, 0.0f);
+                    }
+                    else if (inputVector.y < 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(0.0f, inputVector.y * shipSpeed);
+                    }
+                }
+                // Bottom-Right
+                else if(transform.position.x >= 8.8 && transform.position.y <= -4.9)
+                {
+                    rb2d.velocity = new Vector2(0.0f, 0.0f);
+                    //rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
+                    
+                    if(inputVector.x < 0.0f && inputVector.y > 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(inputVector.x * shipSpeed,inputVector.y * shipSpeed);
+                    }
+                    else if (inputVector.x < 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(inputVector.x * shipSpeed, 0.0f);
+                    }
+                    else if (inputVector.y > 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(0.0f, inputVector.y * shipSpeed);
+                    }
+                }
+                // Top-Left
+                else if(transform.position.x <= -8.8 && transform.position.y >= 4.9)
+                {
+                    rb2d.velocity = new Vector2(0.0f, 0.0f);
+                    //rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
+                    
+                    if(inputVector.x > 0.0f && inputVector.y < 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(inputVector.x * shipSpeed,inputVector.y * shipSpeed);
+                    }
+                    else if (inputVector.x > 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(inputVector.x * shipSpeed, 0.0f);
+                    }
+                    else if (inputVector.y < 0.0f)
+                    {
+                        //rb2d.constraints = RigidbodyConstraints2D.None;
+                        rb2d.velocity = new Vector2(0.0f, inputVector.y * shipSpeed);
+                    }
+                }
+                // Edge Cases
+                else if (transform.position.x <= -8.8 && inputVector.x <= 0)
+                {
+                    rb2d.velocity = new Vector2(0.0f, inputVector.y * shipSpeed);
+                }
+                else if (transform.position.x >= 8.8 && inputVector.x >= 0)
+                {
+                    rb2d.velocity = new Vector2(0.0f, inputVector.y * shipSpeed);
+                }
+                else if (transform.position.y <= -4.9 && inputVector.y <= 0)
+                {
+                    rb2d.velocity = new Vector2(inputVector.x * shipSpeed, 0.0f);
+                }
+                else if (transform.position.y >= 4.9 && inputVector.y >= 0)
+                {
+                    rb2d.velocity = new Vector2(inputVector.x * shipSpeed, 0.0f);
+                }
+                else
+                {
+                    rb2d.velocity = new Vector2(inputVector.x * shipSpeed,inputVector.y * shipSpeed);
+                }
+            }
         }
         //Debug.Log(rb2d.velocity);
 

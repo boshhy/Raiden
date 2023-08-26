@@ -260,6 +260,175 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""UIMenu"",
+            ""id"": ""c0d7c68f-bcd4-498b-be4a-506425eb0e66"",
+            ""actions"": [
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""051cdf6f-d7b0-4728-ac56-2b7c904edfba"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Start"",
+                    ""type"": ""Button"",
+                    ""id"": ""1b0e6987-61eb-4dd2-8a01-4af87f79e9a7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""c119a38c-5472-4653-a6d9-d6c54358c63d"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""e96e8243-a19f-4b97-b336-5081c114649c"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e4128582-b27d-4d7f-bb26-5808bf082b70"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""3d4a3522-b9a1-435f-9c2a-2c0ab39ceb20"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""c5bdaa59-6a66-4e27-8b7b-2a6f5f22047e"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Arrow Keys"",
+                    ""id"": ""84729cb3-d7c2-4c7b-a45b-115d74854b99"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""8364b436-8965-463d-963a-20955fd5399a"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e87fbd6f-5fd3-492f-980b-70e25d0fb324"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""a9433aa6-d47d-4270-863d-6114616b9574"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""98535871-1d49-4cd0-9eed-2011caceb788"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9c2cdd43-d4a5-4fc2-8447-2c3de9d38bab"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": ""StickDeadzone"",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b75887e3-0d3e-447a-872f-3657433a0f65"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Start"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cda4d56c-f3cf-478e-8d30-47cadb1c1d84"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Start"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -284,6 +453,10 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
         m_Ship_FireBigSpaceGun = m_Ship.FindAction("FireBigSpaceGun", throwIfNotFound: true);
         m_Ship_FireZapperGun = m_Ship.FindAction("FireZapperGun", throwIfNotFound: true);
         m_Ship_FireRockets = m_Ship.FindAction("FireRockets", throwIfNotFound: true);
+        // UIMenu
+        m_UIMenu = asset.FindActionMap("UIMenu", throwIfNotFound: true);
+        m_UIMenu_Move = m_UIMenu.FindAction("Move", throwIfNotFound: true);
+        m_UIMenu_Start = m_UIMenu.FindAction("Start", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -427,6 +600,60 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
         }
     }
     public ShipActions @Ship => new ShipActions(this);
+
+    // UIMenu
+    private readonly InputActionMap m_UIMenu;
+    private List<IUIMenuActions> m_UIMenuActionsCallbackInterfaces = new List<IUIMenuActions>();
+    private readonly InputAction m_UIMenu_Move;
+    private readonly InputAction m_UIMenu_Start;
+    public struct UIMenuActions
+    {
+        private @MainShipController m_Wrapper;
+        public UIMenuActions(@MainShipController wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_UIMenu_Move;
+        public InputAction @Start => m_Wrapper.m_UIMenu_Start;
+        public InputActionMap Get() { return m_Wrapper.m_UIMenu; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(UIMenuActions set) { return set.Get(); }
+        public void AddCallbacks(IUIMenuActions instance)
+        {
+            if (instance == null || m_Wrapper.m_UIMenuActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_UIMenuActionsCallbackInterfaces.Add(instance);
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
+            @Start.started += instance.OnStart;
+            @Start.performed += instance.OnStart;
+            @Start.canceled += instance.OnStart;
+        }
+
+        private void UnregisterCallbacks(IUIMenuActions instance)
+        {
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
+            @Start.started -= instance.OnStart;
+            @Start.performed -= instance.OnStart;
+            @Start.canceled -= instance.OnStart;
+        }
+
+        public void RemoveCallbacks(IUIMenuActions instance)
+        {
+            if (m_Wrapper.m_UIMenuActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IUIMenuActions instance)
+        {
+            foreach (var item in m_Wrapper.m_UIMenuActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_UIMenuActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public UIMenuActions @UIMenu => new UIMenuActions(this);
     private int m_KeyboardSchemeIndex = -1;
     public InputControlScheme KeyboardScheme
     {
@@ -444,5 +671,10 @@ public partial class @MainShipController: IInputActionCollection2, IDisposable
         void OnFireBigSpaceGun(InputAction.CallbackContext context);
         void OnFireZapperGun(InputAction.CallbackContext context);
         void OnFireRockets(InputAction.CallbackContext context);
+    }
+    public interface IUIMenuActions
+    {
+        void OnMove(InputAction.CallbackContext context);
+        void OnStart(InputAction.CallbackContext context);
     }
 }

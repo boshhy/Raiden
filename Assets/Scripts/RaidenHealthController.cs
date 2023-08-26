@@ -12,6 +12,8 @@ public class RaidenHealthController : MonoBehaviour
     private float invincibleLength = 0.2f;
     private float invincibleCounter = 0.0f;
     private SpriteRenderer spriteRenderer;
+
+    public HealthBar healthBar;
     
     void Awake()
     {
@@ -22,6 +24,7 @@ public class RaidenHealthController : MonoBehaviour
     {
         currentHealth = maxHealth;
         spriteRenderer = GetComponent<SpriteRenderer>();
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -50,15 +53,18 @@ public class RaidenHealthController : MonoBehaviour
             // Play hurt SFX and take away health from player
             // AudioManager.instance.PlaySFX(3);
             currentHealth--;
+            healthBar.SetHealth(currentHealth);
+            AudioManager.instance.PlaySFX(16);
 
             // If player health is zero or less kill player
             if (currentHealth <= 0)
             {
                 // Change to zero so UI can reference how many hearts to draw
                 currentHealth = 0;
+                AudioManager.instance.PlaySFX(4);
                 Instantiate(hitExplosion, transform.position, transform.rotation);
+                GameOverMenu.instance.ShowGameOver();
                 Destroy(gameObject);
-                
                 // Instantiate a kill effect and respawn player
                 // Instantiate(killEffect, transform.position, transform.rotation);
                 // LevelManager.instance.RespawnPlayer();
@@ -79,12 +85,17 @@ public class RaidenHealthController : MonoBehaviour
             // Update UI controller to display hearts
             //UIController.instance.UpdateHealthDisplay();
         }
+        healthBar.SetHealth(currentHealth);
     }
 
     public void KillRaiden()
     {
         currentHealth = 0;
+        healthBar.SetHealth(currentHealth);
+        AudioManager.instance.PlaySFX(4);
         Instantiate(hitExplosion, transform.position, transform.rotation);
+        GameOverMenu.instance.ShowGameOver();
         Destroy(gameObject);
+        
     }
 }

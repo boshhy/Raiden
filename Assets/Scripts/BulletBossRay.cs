@@ -30,5 +30,10 @@ public class BulletBossRay : MonoBehaviour
             RaidenHealthController.instance.DealDamage();
             // Instantiate(bulletExplosion, gameObject.transform.position, gameObject.transform.rotation);
         }
+        else if (other.tag == "Shield")
+        {
+            Instantiate(bulletExplosion, transform.position, transform.rotation);
+            Destroy(gameObject);
+        } 
     }
 }

@@ -21,6 +21,7 @@ public class ShieldHit : MonoBehaviour
     {
         if (other.tag == "Enemy Bullet" || other.tag == "Enemy")
         {
+            AudioManager.instance.PlaySFX(16);
             Instantiate(hitExplosion, other.transform.position, other.transform.rotation);
             Destroy(gameObject);
         }

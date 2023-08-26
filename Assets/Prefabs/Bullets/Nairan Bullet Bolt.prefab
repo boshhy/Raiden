@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -8012489799106025870}
   m_Layer: 0
   m_Name: Nairan Bullet Bolt
-  m_TagString: Untagged
+  m_TagString: Enemy Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

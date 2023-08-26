@@ -81,8 +81,10 @@ public class BulletBossRocket : MonoBehaviour
                 other.tag == "Bullet Cannon" || 
                 other.tag == "Bullet Big Sapce Gun" || 
                 other.tag == "Bullet Zapper" ||
-                other.tag == "Bullet Rocket")
+                other.tag == "Bullet Rocket" || 
+                other.tag == "Shield")
         {
+            AudioManager.instance.PlaySFX(20);
             Destroy(gameObject);
             Instantiate(bulletExplosion, gameObject.transform.position, gameObject.transform.rotation);
         }
