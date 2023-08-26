@@ -112,7 +112,10 @@ public class BossHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
-                Destroy(healthBar.gameObject);
+                if (healthBar)
+                {
+                    Destroy(healthBar.gameObject);
+                }
                 //Destroy(gameObject);
                 //anim.SetBool("isExploding", true);
             }
