@@ -70,6 +70,7 @@ public class GameOverMenu : MonoBehaviour
 
         // Game is now paused
         isPaused = true;
+        AudioManager.instance.PauseBGM();
     }
 
     public void RestartGame()
@@ -97,7 +98,9 @@ public class GameOverMenu : MonoBehaviour
         isPaused = false;
         Time.timeScale = 1f;
         AudioManager.instance.PlaySFX(22);
-        SceneManager.LoadScene("Start Menu");
+
+        AudioManager.instance.StopBGM();
+        SceneManager.LoadScene("Main Menu");
     }
 
     public void QuitGame()

@@ -10,6 +10,9 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public AudioSource[] SFX;
+    public AudioSource[] BGM;
+    public int currentBGM = 0;
+    public bool inMainMenu = false;
 
 
     void Awake()
@@ -55,11 +58,50 @@ public class AudioManager : MonoBehaviour
         StartCoroutine(EpicMusic());
     }
 
+    public void StopBGM()
+    {
+        BGM[currentBGM].Stop();
+    }
+
+    public void PauseBGM()
+    {
+        BGM[currentBGM].Pause();
+    }
+
+    public void ContinueBGM()
+    {
+        BGM[currentBGM].UnPause();
+    }
+
+    public void PlayBGM()
+    {
+        BGM[currentBGM].Stop();
+        BGM[currentBGM].Play();
+    }
+    
+    public void StartBGM()
+    {
+        BGM[currentBGM].Stop();
+        currentBGM = 0;
+        BGM[currentBGM].Play();
+    }
+
+    public void PlayBGMNumber(int index)
+    {
+        currentBGM = index;
+        BGM[currentBGM].Play();
+    }
+
     IEnumerator EpicMusic()
     {
         Debug.Log("inside BEGGINING of epic music func");
         yield return new WaitForSeconds(7f);
         Debug.Log("inside LAST PAER of epic music func");
-        AudioManager.instance.PlaySFX(13);
+        //AudioManager.instance.PlaySFX(13);
+        if (BossHealthController.instance.isDead() && !inMainMenu)
+        {
+            currentBGM = 1;
+            BGM[currentBGM].Play();
+        }
     }
 }

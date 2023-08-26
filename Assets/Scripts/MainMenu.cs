@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,7 @@ public class MainMenu : MonoBehaviour
 {
     // Get a reference to the pause menu object
     public static GameOverMenu instance;    
-    public GameObject gameOverMenu;
+    public GameObject mainMenu;
     public MainShipController menuUIControls;
     //public GameObject thePauseMenu;
     //public GameObject theMusicMenu;
@@ -27,7 +28,11 @@ public class MainMenu : MonoBehaviour
     }
     void Start()
     {
-        gameOverMenu.SetActive(true);
+        mainMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        primaryButton.Select();
+        Time.timeScale = 1.0f;
+        AudioManager.instance.inMainMenu = true;
     }
 
     // Update is called once per frame
@@ -43,7 +48,7 @@ public class MainMenu : MonoBehaviour
 
         // Deactivate the pause menu
         EventSystem.current.SetSelectedGameObject(null);
-        gameOverMenu.SetActive(false);
+        mainMenu.SetActive(false);
         //theMusicMenu.SetActive(false);
 
         // Set timescale back to 1 so we update normally
@@ -51,6 +56,8 @@ public class MainMenu : MonoBehaviour
 
         // Game is now unpaused 
         isPaused = false;
+        Debug.Log("should start game now");
+        AudioManager.instance.inMainMenu = false;
         SceneManager.LoadScene("Level 001");
     }
 

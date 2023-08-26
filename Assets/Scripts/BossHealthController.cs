@@ -181,8 +181,17 @@ public class BossHealthController : MonoBehaviour
 
     public void PlayVictorySound()
     {
-        AudioManager.instance.StopPlayingMusic(12);
-        AudioManager.instance.PlaySFX(11);
+        AudioManager.instance.StopBGM();
+        AudioManager.instance.PlayBGMNumber(2);
         AudioManager.instance.StartEpicMusic();
+    }
+
+    public bool isDead()
+    {
+        if (currentHealth == 0)
+        {
+            return true;
+        }
+        return false;
     }
 }

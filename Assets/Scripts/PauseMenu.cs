@@ -67,6 +67,7 @@ public class PauseMenu : MonoBehaviour
 
         // Game is now paused
         isPaused = true;
+        AudioManager.instance.PauseBGM();
     }
 
     public void ResumeGame()
@@ -84,6 +85,7 @@ public class PauseMenu : MonoBehaviour
 
         // Game is now unpaused 
         isPaused = false;
+        AudioManager.instance.ContinueBGM();
     }
 
     public void GoToMainMenu()
@@ -93,7 +95,9 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         Time.timeScale = 1f;
         AudioManager.instance.PlaySFX(22);
-        SceneManager.LoadScene("Start Menu");
+
+        AudioManager.instance.StopBGM();
+        SceneManager.LoadScene("Main Menu");
     }
 
     public void QuitGame()
