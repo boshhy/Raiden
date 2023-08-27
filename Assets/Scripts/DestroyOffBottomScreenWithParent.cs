@@ -21,7 +21,6 @@ public class DestroyOffBottomScreenWithParent : MonoBehaviour
         if(other.tag == "Kill Zone For Objects")
         {
             Destroy(transform.parent.gameObject);
-            Debug.Log("should destroy parent object");
         }
     }
 }

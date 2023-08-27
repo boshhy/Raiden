@@ -93,7 +93,6 @@ public class GameOverMenu : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        // Application.Quit();
         EventSystem.current.SetSelectedGameObject(null);
         isPaused = false;
         Time.timeScale = 1f;
@@ -107,19 +106,6 @@ public class GameOverMenu : MonoBehaviour
     {
         Application.Quit();
     }
-
-    // void OnEnable()
-    // { 
-    //     menuUIControls.UIMenu.Enable();
-    //     menuUIControls.UIMenu.Start.performed += PressStart;
-    //     //RandomButton.Select();
-    // }
-
-    // void OnDisable()
-    // {
-    //     menuUIControls.UIMenu.Disable();
-    //     menuUIControls.UIMenu.Start.performed -= PressStart; 
-    // }
 
     public void ShowGameOver()
     {

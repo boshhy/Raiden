@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyNairanScoutHealthController : MonoBehaviour
 {
     private int currentHealth = 4;
-    private int maxHealth = 4;
+    //private int maxHealth = 4;
     public GameObject parentHolder;
     //private SpriteRenderer spriteRenderer;
     private Animator anim;

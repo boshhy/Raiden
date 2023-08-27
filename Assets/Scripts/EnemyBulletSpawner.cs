@@ -35,7 +35,6 @@ public class EnemyBulletSpawner : MonoBehaviour
         {
             // TODO Add explosion effect for enemy crash into Raiden
             Instantiate(hitExplosion, transform.position, transform.rotation);
-            Debug.Log("raiden should be dealt damage");
             Destroy(gameObject);
             RaidenHealthController.instance.DealDamage();
         }

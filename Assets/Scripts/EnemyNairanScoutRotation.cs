@@ -5,13 +5,19 @@ using UnityEngine;
 public class EnemyNairanScoutRotation : MonoBehaviour
 {
     public float rotateSpeed = 100.0f;
+    public GameObject check;
     public Transform target;
     private Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        target = GameObject.FindGameObjectWithTag("Raiden").transform;
+        check = GameObject.FindGameObjectWithTag("Raiden");
+
+        if (check != null)
+        {
+           target = check.transform;
+        }
     }
 
     // Update is called once per frame

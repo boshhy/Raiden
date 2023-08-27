@@ -39,14 +39,11 @@ public class AudioManager : MonoBehaviour
         SFX[sfx].Stop();
         
         SFX[sfx].Play();
-
-        Debug.Log("Played song number:" + sfx);
     }
 
     public void PlaySFXNoStop(int sfx)
     {
         SFX[sfx].Play();
-        Debug.Log("Played song number:" + sfx);
     }
     
     public void StopPlayingMusic(int sfx)
@@ -95,9 +92,7 @@ public class AudioManager : MonoBehaviour
 
     IEnumerator EpicMusic()
     {
-        Debug.Log("inside BEGGINING of epic music func");
         yield return new WaitForSeconds(7f);
-        Debug.Log("inside LAST PAER of epic music func");
         //AudioManager.instance.PlaySFX(13);
         if (BossHealthController.instance.isDead() && !inMainMenu)
         {

@@ -31,6 +31,11 @@ public class AsteroidHealthController : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void PlayDestructionSound()
+    {
+        AudioManager.instance.PlaySFX(4);
+    }
+
     void OnTriggerEnter2D(Collider2D other)
     {
         // Debug.Log(currentHealth);
@@ -45,6 +50,7 @@ public class AsteroidHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
+                
             }
         }
         if (other.tag == "Bullet Rocket")
@@ -58,6 +64,7 @@ public class AsteroidHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
+               
             }
         }
         if (other.tag == "Bullet Cannon")
@@ -71,6 +78,7 @@ public class AsteroidHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
+                
             }
         }
         if (other.tag == "Bullet Big Space Gun")
@@ -84,6 +92,7 @@ public class AsteroidHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
+                
             }
         }
 

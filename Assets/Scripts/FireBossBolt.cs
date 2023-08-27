@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireBossBolt : MonoBehaviour
 {
     public GameObject bullet;
-    private bool isFiring = false;
+    //private bool isFiring = false;
 
     private float TimeBeforeFiring = 0.0f;
     private float TimeBetweenBullets = 1.0f;

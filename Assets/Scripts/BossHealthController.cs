@@ -15,6 +15,7 @@ public class BossHealthController : MonoBehaviour
     public bool canTripleTorpedo = false;
     public bool isHalfHealth = false;
     public bool isTenPercentHealth = false;
+    public GameObject theSpawner;
 
     public HealthBar healthBar;
     
@@ -31,6 +32,7 @@ public class BossHealthController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         healthBar.SetMaxHealth(maxHealth);
+        theSpawner.SetActive(false);
     }
 
 
@@ -131,8 +133,12 @@ public class BossHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
-                Destroy(healthBar.gameObject);
+                if (healthBar)
+                {
+                    Destroy(healthBar.gameObject);
+                }
                 //anim.SetBool("isExploding", true);
+                
             }
         }
         if (other.tag == "Bullet Cannon")
@@ -146,7 +152,10 @@ public class BossHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
-                Destroy(healthBar.gameObject);
+                if (healthBar)
+                {
+                    Destroy(healthBar.gameObject);
+                }
                 //anim.SetBool("isExploding", true);
             }
         }
@@ -161,7 +170,10 @@ public class BossHealthController : MonoBehaviour
                 gameObject.tag = "Dead";
                 currentHealth = 0;
                 anim.SetInteger("hurtNumber", 2);
-                Destroy(healthBar.gameObject);
+                if (healthBar)
+                {
+                    Destroy(healthBar.gameObject);
+                }
 
                 //anim.SetBool("isExploding", true);
             } 
@@ -187,6 +199,7 @@ public class BossHealthController : MonoBehaviour
         AudioManager.instance.StopBGM();
         AudioManager.instance.PlayBGMNumber(2);
         AudioManager.instance.StartEpicMusic();
+        theSpawner.SetActive(true);
     }
 
     public bool isDead()

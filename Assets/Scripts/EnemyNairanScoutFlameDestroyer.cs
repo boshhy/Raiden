@@ -16,7 +16,6 @@ public class EnemyNairanScoutFlameDestroyer : MonoBehaviour
     {
         if (anim.GetInteger("hurtNumber") == 2)
         {
-            Debug.Log("Need to destroy flame");
             Destroy(gameObject);
         }
     }

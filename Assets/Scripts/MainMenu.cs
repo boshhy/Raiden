@@ -56,7 +56,7 @@ public class MainMenu : MonoBehaviour
 
         // Game is now unpaused 
         isPaused = false;
-        Debug.Log("should start game now");
+
         AudioManager.instance.inMainMenu = false;
         SceneManager.LoadScene("Level 001");
     }

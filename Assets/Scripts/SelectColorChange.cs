@@ -21,7 +21,6 @@ public class SelectColorChange : MonoBehaviour, ISelectHandler, IDeselectHandler
 
     public void OnSelect(BaseEventData eventData)
     {
-        Debug.Log("In SetColor Script");
         theTextHolder = gameObject.GetComponentInChildren<TextMeshProUGUI>();
         theTextHolder.alpha = 1.0f;
         //AudioManager.instance.PlaySFX(0);

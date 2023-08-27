@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyTorpedoShipHealthController : MonoBehaviour
 {
     private int currentHealth = 40;
-    private int maxHealth = 40;
+    //private int maxHealth = 40;
     public GameObject parentHolder;
     //private SpriteRenderer spriteRenderer;
     private Animator anim;
